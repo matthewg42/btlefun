@@ -33,4 +33,6 @@ NOTE: Needs to be executed as root on most Linux distros (BTLE scanning is a pri
 
 When a BeepMaker thread experiences any sort of exception (e.g. BTLE stack reports a failure to connect), that thread is then useless, and the device in question will not be added again, and so will remain silent until the program is re-started.
 
+## Acknowledgements
 
+Found this page super-helpful:  http://guru.multimedia.cx/bluetooth-tracking-devicestagskey-finders/
