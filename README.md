@@ -31,7 +31,13 @@ NOTE: Needs to be executed as root on most Linux distros (BTLE scanning is a pri
 
 ### Known Issues
 
+#### Exceptions
+
 When a BeepMaker thread experiences any sort of exception (e.g. BTLE stack reports a failure to connect), that thread is then useless, and the device in question will not be added again, and so will remain silent until the program is re-started.
+
+#### Dropped messages
+
+It seems the BTLE message writing isn't super reliable, and you sometimes get parts of your message dropped.  Deal.
 
 ## Acknowledgements
 
