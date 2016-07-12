@@ -29,4 +29,8 @@ This program will continuously scan for new BTLE devices, and if it detects that
 
 NOTE: Needs to be executed as root on most Linux distros (BTLE scanning is a privileged opreation).
 
+### Known Issues
+
+When a BeepMaker thread experiences any sort of exception (e.g. BTLE stack reports a failure to connect), that thread is then useless, and the device in question will not be added again, and so will remain silent until the program is re-started.
+
 
